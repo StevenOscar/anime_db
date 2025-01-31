@@ -1,10 +1,17 @@
 import 'dart:ui';
 
-import 'package:anime_db/anime_provider.dart';
-import 'package:anime_db/home_screen.dart';
+import 'package:anime_db/providers/anime_provider.dart';
+import 'package:anime_db/providers/character_provider.dart';
+import 'package:anime_db/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+/*
+  IMPORTANT:
+  1. Untuk dapat menjalankan aplikasi dengan baik pada platform web, perlu untuk mendisable browser security terlebih dahulu
+  (meruj)
+  https://stackoverflow.com/questions/65630743/how-to-solve-flutter-web-api-cors-error-only-with-dart-code
+*/
 void main() {
   runApp(
     MultiProvider(
@@ -12,6 +19,7 @@ void main() {
         ChangeNotifierProvider<CurrentSeasonAnimeProvider>(create: (context) => CurrentSeasonAnimeProvider()),
         ChangeNotifierProvider<SearchAnimeProvider>(create: (context) => SearchAnimeProvider()),
         ChangeNotifierProvider<TopAnimeProvider>(create: (context) => TopAnimeProvider()),
+        ChangeNotifierProvider<CharacterProvider>(create: (context) => CharacterProvider()),
       ],
       child: const MyApp()
     ),

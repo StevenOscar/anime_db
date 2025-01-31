@@ -209,18 +209,18 @@ class AnimeModel {
 }
 
 class Aired {
-  String? from;
+  String from;
   String? to;
   Prop? prop;
 
   Aired({
-    this.from,
+    required this.from,
     this.to,
     this.prop,
   });
 
   factory Aired.fromJson(Map<String, dynamic> json) => Aired(
-        from: json["from"],
+        from: json["from"] ?? "    ",
         to: json["to"],
         prop: json["prop"] == null ? null : Prop.fromJson(json["prop"]),
       );
