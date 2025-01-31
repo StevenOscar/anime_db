@@ -1,16 +1,11 @@
 # anime_db
 
-A new Flutter project.
+Project membuat aplikasi anime database yang responsif (dapat dijalankan pada web dan mobile)
 
-## Getting Started
+## Keterangan
 
-This project is a starting point for a Flutter application.
+Merupakan project yang digunakan untuk submission kelas "Belajar Membuat Aplikasi Flutter untuk Pemula" by Dicoding.
 
-A few resources to get you started if this is your first Flutter project:
+## PENTING
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Mohon baca comment pada main.dart terlebih dahulu sebelum menjalankan aplikasi pada platform web.

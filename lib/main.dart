@@ -8,9 +8,10 @@ import 'package:provider/provider.dart';
 
 /*
   IMPORTANT:
-  1. Untuk dapat menjalankan aplikasi dengan baik pada platform web, perlu untuk mendisable browser security terlebih dahulu
-  (meruj)
-  https://stackoverflow.com/questions/65630743/how-to-solve-flutter-web-api-cors-error-only-with-dart-code
+  1. Untuk dapat menjalankan aplikasi dengan baik pada platform WEB, perlu untuk men-disable browser security terlebih dahulu
+  (merujuk pada https://stackoverflow.com/questions/65630743/how-to-solve-flutter-web-api-cors-error-only-with-dart-code)
+  2. Menggunakan state management provider
+  3. Tetap mengimplementasikan stateless widget pada halaman detail anime, dan menerapkan stateful widget pada halaman lainnya.
 */
 void main() {
   runApp(
